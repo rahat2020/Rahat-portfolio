@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane,faMapMarkedAlt, faPhone, faEnvelope, } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faFacebook, faLinkedin, faTwitter, } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faFacebook, faLinkedin, faTwitter, } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 const ContactMe = () => {
@@ -53,8 +53,8 @@ const ContactMe = () => {
                         <ul class="contact-list">
                             <li class="list-item"> <FontAwesomeIcon className="icon" icon={faMapMarkedAlt} /> <span class="contact-text place">Dhaka, Bangladesh</span></li>
 
-                            <li class="list-item"><FontAwesomeIcon className="icon" icon={faPhone} /> <span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></li>
-                            <li class="list-item"><FontAwesomeIcon className="icon" icon={faEnvelope} /> <span class="contact-text gmail"><a href="mailto:#" title="Send me an email">RetroBlog@gmail.com</a></span></li>
+                            <li class="list-item"><FontAwesomeIcon className="icon" icon={faPhone} /> <span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+88018941-03578</a></span></li>
+                            <li class="list-item"><FontAwesomeIcon className="icon" icon={faEnvelope} /> <span class="contact-text gmail"><a href="mailto:#" title="Send me an email">kazimdboktiar2020@gmail.com</a></span></li>
 
                         </ul>
 

@@ -14,7 +14,6 @@
 }
 
 .title-rank{
-    text-align: left;
     margin: 5px;
     color: rgba(255, 255, 255, 0.918);
 }
@@ -26,7 +25,20 @@
 .title-description:hover{
   color: #fff;
 }
-
+.contact{
+  margin:10px;
+  font-size:30px;
+  border-radius: 50%;
+}
+.contact:hover{
+  color: #fff;
+}
+.photo-details .icon{
+  background-color: #fff;
+  color: #1a83ff;
+  height: 100px;
+  width: 100%;
+}
 .header-img{
     max-width:700px;
     border: 1px solid #1a83ff;
@@ -138,11 +150,11 @@
     transition: display 0.5s;
     
 }
-.header-img:hover .photo-details{
+/* .header-img:hover .photo-details{
   display: block;
   background: linear-gradient(190deg, rgba(255, 255, 0, 0.363), rgba(173, 216, 230, 0.514));;
 }
 .header-img:hover .photo-details{
   text-align: center;
   font-size: 25px;
-}
+} */
