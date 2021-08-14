@@ -17,8 +17,8 @@ function App() {
     <div className="App">
       <Router>
         <MessengerCustomerChat
-          pageId="<PAGE_ID>"
-          appId="<APP_ID>"
+          pageId="101340032265864"
+          appId="180668834020407"
           htmlRef="<REF_STRING>"
         />
         <Switch>

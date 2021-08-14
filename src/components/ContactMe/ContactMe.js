@@ -19,23 +19,23 @@ const ContactMe = () => {
 
                 <div class="contact-wrapper">
                     {/* message form */}
-                    <form data-aos="fade-left" id="contact-form" class="form-horizontal" role="form">
+                    <form data-aos="fade-left" id="contact-form" class="form-horizontal">
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control mb-1" id="name" placeholder="NAME" name="name" value="" required />
+                                <input type="text" class="form-control mb-1" id="name" placeholder="NAME" value="" required />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="email" class="form-control mb-1" id="email" placeholder="EMAIL" name="email" value="" required />
+                                <input type="email" class="form-control mb-1" id="email" placeholder="EMAIL" value="" required />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <textarea class="form-control mb-1" rows="8" placeholder="MESSAGE" name="message" required></textarea>
+                                <textarea class="form-control mb-1" rows="8" placeholder="MESSAGE" required></textarea>
                             </div>
 
                         </div>
