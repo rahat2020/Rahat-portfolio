@@ -1,9 +1,9 @@
 import React from 'react';
 import './Projects.css';
 import Navbar from '../Navbar/Navbar';
-import euro from '../../img/euro.png';
+// import euro from '../../img/euro.png';
 import plumber from '../../img/plumber.png';
-import barber from '../../img/barber.png';
+// import barber from '../../img/barber.png';
 // import hungry from '../../img/hungry.png';
 const Projects = () => {
     return (

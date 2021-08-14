@@ -23,13 +23,13 @@ const ContactMe = () => {
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control mb-1" id="name" placeholder="NAME" value="" required />
+                                <input type="text" class="form-control mb-1"  placeholder="NAME" value="" required />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="email" class="form-control mb-1" id="email" placeholder="EMAIL" value="" required />
+                                <input type="email" class="form-control mb-1"  placeholder="EMAIL" value="" required />
                             </div>
                         </div>
 
