@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import rahat from '../../img/rahat.jpeg';
 import './HeaderMain.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const HeaderMain = () => {
+    useEffect(() => {
+        AOS.init({ offset: 120, duration: 2000});
+    })
     return (
         <div className="container p-4 mb-4 mt-4">
             <div className="row">
-                <div className="col-md-6 left-col-1">
-                    <div className="header-container mt-5 pt-5 font_primary">
+                <div data-aos="fade-left" className="col-md-6 left-col-1">
+                    <div   className="header-container mt-5 pt-5 font_primary">
                         <h1 className="title">Kazi Md. Boktiar Uddin Rahat</h1>
                         <div className="d-flex text-left ">
                             <h5 className="title-rank">Front End Developer</h5>
@@ -23,7 +28,7 @@ const HeaderMain = () => {
                     </div>
                 </div>
                 <div className="col-md-6 mt-5 pt-5 d-flex justify-content-center">
-                    <div className="header-img">
+                    <div data-aos="fade-right"  className="header-img">
                         <span></span>
                         <div className="col-right-img">
                             <img className="head-img" src={rahat} alt="" />

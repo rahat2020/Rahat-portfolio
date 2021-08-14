@@ -8,7 +8,7 @@ const AboutMe = () => {
     return (
         <div className="container-fluid">
             <Navbar />
-            <section className="container">
+            <section className="container mb-2">
                 <div className="row row-container mt-5">
                     <div className="col-md-7 about-img">
                         <img className="" src={rahat} alt=""></img>
