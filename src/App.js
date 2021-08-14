@@ -1,23 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Header from './components/Header/Header';
+import AboutMe from './components/AboutMe/AboutMe';
+import Projects from './components/Projects/Projects';
+import ContactMe from './components/ContactMe/ContactMe';
+import Portfolio from './components/Portfolio/Portfolio';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <MessengerCustomerChat
+          pageId="<PAGE_ID>"
+          appId="<APP_ID>"
+          htmlRef="<REF_STRING>"
+        />
+        <Switch>
+          <Route exact path="/">
+            <Header />
+          </Route>
+          <Route path="/about">
+            <AboutMe />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

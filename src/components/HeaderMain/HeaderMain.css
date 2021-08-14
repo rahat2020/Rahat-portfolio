@@ -1,0 +1,148 @@
+
+.header-container{
+    margin: auto;
+    text-align: left;
+    
+}
+.left-col-1{
+  border-right: 5px solid #1a83ff;
+
+}
+.title{
+    font-size: 55px;
+    color: #1a83ff;
+}
+
+.title-rank{
+    text-align: left;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.918);
+}
+.title-description{
+    max-width: 700px;
+    color: rgb(180, 176, 176);
+    transition: color 0.5s;
+}
+.title-description:hover{
+  color: #fff;
+}
+
+.header-img{
+    max-width:700px;
+    border: 1px solid #1a83ff;
+}
+
+
+/* btn style is adding */
+.btn-one{
+  margin-left: 10px;
+}
+.btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-family: "Arial";
+    cursor:pointer;  
+    /* margin:10px; */
+    transition: 0.8s all linear;
+    position:relative;
+    overflow: hidden;
+    color: #3498db;
+    box-shadow: 0px 0px 2px #3baaf3;
+  }
+  
+  .btn1:hover{
+    color: #fff;
+  }
+  
+  .btn::before{
+    content: "";
+    position:absolute;
+    left:0;
+    height: 0;
+    width:100%;
+    background:#3baaf3;
+    z-index: -1;
+    transition: 0.8s all ease-in-out;
+  }
+  .btn1::before{
+    top: 0;
+    border-radius:  0 0 100% 5% ;
+  }
+  
+  .btn1:hover::before{
+    height: 180%;
+  }
+ 
+  /* image style  */
+  .header-img{
+      position: relative;
+      width:300px;
+      height:300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+
+  }
+  .header-img::before{
+    content:"";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg, aqua, rgb(5, 5, 48), rgba(255, 255, 0, 0.884));
+
+  }
+
+  .header-img::after{
+    content:"";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg, aqua, rgb(5, 5, 48), rgba(255, 255, 0, 0.884));
+    filter: blur(15px);
+  }
+  .header-img span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgb(5, 5, 48);
+    z-index: 10;
+  }
+
+  .col-right-img{
+    width: 290px;
+    height: 306px;
+    position: relative;
+  }
+  .col-right-img, .header-img img{
+    z-index: 12;
+    width: 100%;
+  }
+  .photo-details{
+    position: absolute;
+    width: 290px;
+    height: 306px;
+    z-index: 13;
+    top: 0;
+    display:none;
+    transition: display 0.5s;
+    
+}
+.header-img:hover .photo-details{
+  display: block;
+  background: linear-gradient(190deg, rgba(255, 255, 0, 0.363), rgba(173, 216, 230, 0.514));;
+}
+.header-img:hover .photo-details{
+  text-align: center;
+  font-size: 25px;
+}

@@ -1,0 +1,20 @@
+.nav-item{
+  font-size: 17px;
+  color: #1a83ff;
+  font-weight: 700;
+  padding: 0 10px;
+  transition: color 0.5s;
+
+}
+.navbar-toggler-icon{
+  /* color: #fff; */
+  background: #fcf6f6d2;
+}
+.nav-item:hover{
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+.nav-style li Link{
+  text-decoration: none;
+}
