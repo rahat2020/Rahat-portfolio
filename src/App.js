@@ -19,7 +19,6 @@ function App() {
         <MessengerCustomerChat
           pageId="101340032265864"
           appId="180668834020407"
-          htmlRef="<REF_STRING>"
         />
         <Switch>
           <Route exact path="/">
