@@ -20,7 +20,6 @@ const ContactMe = () => {
                 <div class="contact-wrapper">
                     {/* message form */}
                     <form data-aos="fade-left" id="contact-form" class="form-horizontal">
-
                         <div class="form-group">
                             <div class="col-sm-12">
                                 <input type="text" class="form-control mb-1"  placeholder="NAME" value="" required />

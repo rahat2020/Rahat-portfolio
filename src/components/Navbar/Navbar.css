@@ -7,8 +7,11 @@
 
 }
 .navbar-toggler-icon{
-  /* color: #fff; */
+  border-radius: 5px;
   background: #fcf6f6d2;
+}
+.navbar-toggler-icon:hover{
+  background: #000000d7;
 }
 .nav-item:hover{
   color: #fff;

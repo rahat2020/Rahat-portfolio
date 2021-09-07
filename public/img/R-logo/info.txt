@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Sarina-Regular
+font link: https://fonts.google.com/specimen/Sarina
+font author: James Grieshaber
+font author site: https://p22.com/designers_view-James_Grieshaber
+
+
+{"bg-gradient-0":"#4E1A70","bg-gradient-1":"#2B4CF2","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      
