@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import rahat from '../../img/rahat.jpeg';
 import './HeaderMain.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,8 +10,10 @@ const HeaderMain = () => {
     useEffect(() => {
         AOS.init({ offset: 120, duration: 2000 });
     })
+
     return (
-        <div className="container p-4 mb-4 mt-4">
+        <div className="container p-4 mb-4 mt-4 ">
+
             <div className="row">
                 <div data-aos="fade-left" className="col-md-6 left-col-1">
                     <div className="header-container mt-5 pt-5 font_primary">
@@ -40,7 +41,7 @@ const HeaderMain = () => {
                         </ul>
                     </div>
                     <div className="btn-header">
-                        <Link to="/https://drive.google.com/file/d/1x-aj9axn3_TNLV2Ytc2lW06U_5dUNBMH/view?usp=sharing"> <button className="btn btn1">Download resume</button></Link>
+                        <a href="https://drive.google.com/file/d/1x-aj9axn3_TNLV2Ytc2lW06U_5dUNBMH/view?usp=sharing" target="_blank"><button className="btn btn1">Download resume</button> </a>
                         <Link to="/projects"><button className="btn btn1 btn-one">visit my works</button></Link>
 
                     </div>
@@ -49,9 +50,8 @@ const HeaderMain = () => {
                     <div data-aos="fade-right" className="header-img">
                         <span></span>
                         <div className="col-right-img">
-                            <img className="head-img" src={rahat} alt="" />
+                                <img className="head-img" src={rahat} alt="" />
                         </div>
-
                     </div>
                 </div>
             </div>

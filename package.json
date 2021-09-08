@@ -18,6 +18,8 @@
     "react-messenger-customer-chat": "^0.8.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-vanilla-tilt": "^1.0.0",
+    "vanilla-tilt": "^1.7.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

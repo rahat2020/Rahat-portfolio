@@ -12,7 +12,10 @@
     font-size: 55px;
     color: #1a83ff;
 }
-
+.title:hover{
+  transition: 0.5s all;
+ color: #fff;
+}
 .title-rank{
     margin: 5px;
     color: rgba(255, 255, 255, 0.918);
@@ -150,6 +153,11 @@
     transition: display 0.5s;
     
 }
+@media (max-width:468px){
+  .btn{
+    padding: 10px;
+  }
+}
 /* .header-img:hover .photo-details{
   display: block;
   background: linear-gradient(190deg, rgba(255, 255, 0, 0.363), rgba(173, 216, 230, 0.514));;
@@ -158,3 +166,4 @@
   text-align: center;
   font-size: 25px;
 } */
+

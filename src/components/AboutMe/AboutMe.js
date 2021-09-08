@@ -3,17 +3,23 @@ import './AboutMe.css';
 import Navbar from '../Navbar/Navbar';
 import rahat from '../../img/rahat.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faPhone, faEnvelope, faHouseUser } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faPhone, faEnvelope, faHouseUser } from '@fortawesome/free-solid-svg-icons';
+import Tilt from 'react-vanilla-tilt';
+import { Link } from 'react-router-dom';
 const AboutMe = () => {
     return (
         <div className="container-fluid">
             <Navbar />
             <section className="container mb-2">
                 <div className="row row-container mt-5">
-                    <div className="col-md-7 about-img">
-                        <img className="" src={rahat} alt=""></img>
 
+                    <div className="col-md-7 about-img">
+                        <Tilt>
+                            <img className="w-100 h-50" src={rahat} alt=""></img>
+                        </Tilt>
                     </div>
+
+
                     <div className="col-md-5 about">
                         <div className="about-description">
                             <h6 className="about-hey">HELLO THERE, I AM</h6>
@@ -28,16 +34,23 @@ const AboutMe = () => {
                             <li> <FontAwesomeIcon className="about-icon mt-4" icon={faHouseUser} /> <span className="about-text font_description">Chattogram, Bnagladesh</span></li>
                         </ul>
                         <div className="button">
-                            <button className="btn-resume-one p-1 px-3">Hire me</button>
-                            <button className="btn-resume p-1 px-3">My Works</button>
+                            <a href="https://drive.google.com/file/d/1x-aj9axn3_TNLV2Ytc2lW06U_5dUNBMH/view?usp=sharing" target="_blank">
+                                <button className="btn-resume-one p-1 px-3">Hire me</button>
+                            </a>
+
+                            <Link to="/projects"><button className="btn-resume p-1 px-3">My Works</button></Link>
+
                         </div>
                     </div>
                 </div>
             </section>
             {/* about skill section */}
             <section className="container">
-                <div className="row mt-5">
-                    <div className="col-md-7 col-left">
+
+                <h2 className="text-center skill-title main-head">❏ Here is my skill ❏</h2>
+                <here></here>
+                <div className="row mt-5 mb-5">
+                    <div className="col-md-6 col-left">
                         <div class="skill-bars">
                             <div class="bar">
                                 <div class="info">
@@ -79,14 +92,11 @@ const AboutMe = () => {
                                     <span></span>
                                 </div>
                             </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>JavaScript</span>
-                                </div>
-                                <div class="progress-line jquery">
-                                    <span></span>
-                                </div>
-                            </div>
+
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-right">
+                        <div className="skill-bars">
                             <div class="bar">
                                 <div class="info">
                                     <span>React Native</span>
@@ -111,10 +121,24 @@ const AboutMe = () => {
                                     <span></span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="col-md-5 col-right">
+                            <div class="bar">
+                                <div class="info">
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="progress-line javascript">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>Express JS</span>
+                                </div>
+                                <div class="progress-line express">
+                                    <span></span>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </section>

@@ -2,20 +2,21 @@
     margin: 30px;
 }
 .about-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to left, rgb(213, 216, 19), lightblue); ;
-    border-radius: 10px;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.skill-title{
+  color: #f0f0f0;
 }
 
 .about-img img{
     width: 400px;
     height: 400px;
-    border-radius: 6px;
+    border-radius: 20px;
+    padding: 5px;
 }
-
 .about-description{
     margin-bottom: 15px;
 }
@@ -78,7 +79,7 @@ ol, ul {
   }
   .skill-bars{
     padding: 25px 30px;
-    width: 600px;
+    width: 500px;
     background: #fff;
     box-shadow: 5px 5px 20px rgba(124, 124, 124, 0.623);
     border-radius: 10px;
@@ -100,9 +101,7 @@ ol, ul {
     animation: showText 0.5s 1s linear forwards;
   }
   
-  .col-right{
-    border: 1px solid #f6f6;
-  }
+ 
   @keyframes showText {
     100%{
       opacity: 1;
@@ -140,8 +139,11 @@ ol, ul {
   .bar .progress-line.css span{
     width: 80%;
   }
-  .bar .progress-line.jquery span{
+  .bar .progress-line.javascript span{
     width: 85%;
+  }
+  .bar .progress-line.express span{
+    width: 87%;
   }
   .bar .progress-line.python span{
     width: 70%;
@@ -188,8 +190,11 @@ ol, ul {
   .progress-line.css span::after{
     content: "80%";
   }
-  .progress-line.jquery span::after{
+  .progress-line.javascript span::after{
     content: "85%";
+  }
+  .progress-line.express span::after{
+    content: "87%";
   }
   .progress-line.python span::after{
     content: "70%";
@@ -201,5 +206,18 @@ ol, ul {
       .skill-bars{
         display: block;
         width:100%;
+      }
+      .col-right{
+        margin-top: 10px;
+      }
+      .about-description{
+        margin-top: 20px;
+      }
+      .img{
+        padding:20px;
+        border-radius: 20px;
+      }
+      .about-img{
+        background: linear-gradient(to left, rgb(26 0 255), lightblue);
       }
   }
